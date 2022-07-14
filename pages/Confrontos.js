@@ -16,35 +16,37 @@ export default function App() {
     SairaStencilOne_400Regular
   });
 
+
   if (!fontsloaded) {
     return <AppLoading />;
   } else {
     return (
       <View style={estilo.container}>
         <Image style={estilo.img2} source={require('../assets/logo.png')} />
-
+       
         <ScrollView style={estilo.fotos}>
 
           <Text style={estilo.Titulo}>Quartas de final</Text>
 
           <Text style={estilo.legenda2}>Time 1 X Time 2</Text>
-          <TouchableOpacity style={estilo.botao} onPress={()=> noticias()}>
+          <TouchableOpacity style={estilo.botao} onPress={()=> InfoJogo1()}>
           <Image style={estilo.img} source={require('../assets/btn1.png')} />
           </TouchableOpacity>
          
           <Text style={estilo.legenda2}>Time 3 X Time 4</Text>
-          <TouchableOpacity style={estilo.botao} onPress={()=> noticias()}>
+          <TouchableOpacity style={estilo.botao} onPress={()=> alterar()}>
           <Image style={estilo.img} source={require('../assets/btn1.png')} />
           </TouchableOpacity>
        
           <Text style={estilo.legenda2}>Time 5 X Time 6</Text>
+          <TouchableOpacity style={estilo.botao} onPress={()=> InfoJogo1()}>
           <Image style={estilo.img} source={require('../assets/btn1.png')} />
+          </TouchableOpacity>
          
           <Text style={estilo.legenda2}>Time 7 X Time 8</Text>
-          <Image
-            style={estilo.img}
-            source={require('../assets/btn1.png')}
-          />
+          <TouchableOpacity style={estilo.botao} onPress={()=> InfoJogo1()}>
+          <Image style={estilo.img} source={require('../assets/btn1.png')} />
+          </TouchableOpacity>
           
         </ScrollView>
       </View>
@@ -89,6 +91,10 @@ const estilo = StyleSheet.create({
   },
 
   img2: {
+    width: 395,
+    height: 95,
+  },
+   img2: {
     width: 395,
     height: 95,
   },

@@ -43,7 +43,7 @@ export default function App() {
           <Text style={estilo.legenda2}>Noticia</Text>
           <Image
             style={estilo.img}
-            source={require('../assets/btn1.png')}
+            source={require('../assets/noticias.jpg')}
           />
           
         </ScrollView>
